@@ -159,7 +159,7 @@ def start_date(start):
     # return the list in json using jsonify
     session.close()    
 
-    return jsonify(return_list)
+    return jsonify(start_date_list)
 
 @app.route("/api/v1.0/<start>/<end>")
 def temp_range_start_end(start,end):
